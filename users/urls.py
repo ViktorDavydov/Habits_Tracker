@@ -8,6 +8,6 @@ app_name = UsersConfig.name
 router = DefaultRouter()
 router.register(r'users', UserViewSet, basename='пользователи')
 
-url_patterns = [
-
-]
+# url_patterns = [
+#
+# ]
