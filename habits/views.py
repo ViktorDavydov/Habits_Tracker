@@ -21,3 +21,13 @@ class HabitRetrieveAPIView(generics.RetrieveAPIView):
 
     def get_queryset(self):
         return Habit.objects.filter(is_public=True)
+
+
+class HabitUpdateAPIView(generics.UpdateAPIView):
+    serializer_class = HabitSerializer
+    queryset = Habit.objects.all()
+
+
+class HabitDeleteAPIView(generics.DestroyAPIView):
+    serializer_class = HabitSerializer
+    queryset = queryset = Habit.objects.all()
