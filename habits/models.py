@@ -19,7 +19,7 @@ class Habit(models.Model):
     is_public = models.BooleanField(default=False, verbose_name='признак публичности')
     good_habit = models.BooleanField(default=True, verbose_name='полезная привычка')
 
-    def __repr__(self):
+    def __str__(self):
         return f'{self.action} - {self.time}'
 
     class Meta:
