@@ -19,7 +19,7 @@ class Habit(models.Model):
     good_habit = models.BooleanField(default=False, verbose_name='полезная привычка')
 
     def __str__(self):
-        return f'{self.action} - {self.time}'
+        return f'{self.pk}: {self.action} - {self.time}'
 
     class Meta:
         verbose_name = 'привычка'
